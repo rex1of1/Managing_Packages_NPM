@@ -53,7 +53,11 @@ app.use(function(err, req, res, next) {
       .type('txt')
       .send(err.message || 'SERVER ERROR');
   }  
-})**/
+})*/
+
+app.get("/", function (reg, res) {
+    res.send("Hello Express")
+});
 
 var port = process.env.PORT || 3000;
 bGround.setupBackgroundApp(app, myApp, __dirname).listen(port, function(){
