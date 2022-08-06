@@ -1,29 +1,26 @@
 {
-   "author":"New Programmer",
-   "description":"A project that does something awesome",
-   "name":"fcc-learn-npm-package-json",
-   "license":"MIT",
-   "version":"1.0",
-   "keywords":[
-	 "New Programmer",
-	 "freecodecamp",
-	 "Learning to program is awesome"
-],
-	
-	"dependencies":{
-		"body-parser": "^1.15.2",
-        "cookie-parser": "^1.4.3",
-        "dotenv": "^16.0.1",
-        "express": "^4.14.0",
-        "fcc-express-bground": "https://github.com/freeCodeCamp/fcc-express-bground-pkg.git"
-		
-	},
-		"main":"server.js",
-		"scripts":{
-			"start":"node server.js"
-		},
-			"engines":{
-				"node":"v18.6.0"
-				}
-				
-				}
+   "author": "New Programmer",
+   "description": "A project that does something awesome",
+   "name": "fcc-learn-npm-package-json",
+   "license": "MIT",
+   "version": "1.0",
+   "keywords": [
+      "New Programmer",
+      "freecodecamp",
+      "Learning to program is awesome"
+   ],
+   "dependencies": {
+      "body-parser": "^1.15.2",
+      "cookie-parser": "^1.4.3",
+      "dotenv": "^16.0.1",
+      "express": "^4.14.0",
+      "fcc-express-bground": "https://github.com/freeCodeCamp/fcc-express-bground-pkg.git"
+   },
+   "main": "server.js",
+   "scripts": {
+      "start": "node server.js"
+   },
+   "engines": {
+      "node": "v18.6.0"
+   }
+}
