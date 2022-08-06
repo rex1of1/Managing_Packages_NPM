@@ -3,7 +3,7 @@ let express = require('express');
 let app = express();
 var bGround = require('fcc-express-bground');
 require("dotenv").config()
-let require = require('body-parser')
+let bodyParser = require('body-parser')
 
 
 app.use(function(req, res, next) {
@@ -15,10 +15,15 @@ app.use(function(req, res, next) {
 
 // mount body-parser middleware here
 
-app.use(function(req, res, next) {
-    bodyParser.urlencoded({extended: false});
-    next();
-})
+
+//parse application/x-www-form-urlencoded
+    app.use(bodyParser.urlencoded({extended: false}))
+
+
+    //parse application/json
+    app.use(bodyParser.json())
+    
+
 
 
 
