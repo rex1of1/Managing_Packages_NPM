@@ -58,9 +58,6 @@ app.use(function(err, req, res, next) {
   }  
 })*/
 
-app.get/("/json", function(req, res) {
-    res.json({ "message": "Hello json" });
-});
 
 app.get("/", function (reg, res) {
     res.sendFile(__dirname + "/views/index.html");
