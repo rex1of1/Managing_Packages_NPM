@@ -24,9 +24,6 @@
 		},
 			"engines":{
 				"node":"v18.6.0"
-				},
+				}
 				
-				"repository":{
-					"type":"git",
-					"url":"https://idontknow/todo.git"
-					}}
+				}
