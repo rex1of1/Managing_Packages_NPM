@@ -51,12 +51,12 @@ function getCurrentTimeString() {
 
 
 
-app.get("/now", function(req, res, next){
+app.get("/now", (req, res, next) => {
     req.time = getCurrentTimeString();
     next();
 }, function(req, res){
-    res.json({ time: req.time })
-})
+    res.json({ time: req.time });
+});
 
 
 
