@@ -1,3 +1,4 @@
+const { query } = require('express');
 let express = require('express');
 let app = express();
 var bGround = require('fcc-express-bground');
@@ -62,6 +63,17 @@ app.get("/now", (req, res, next) => {
 app.get("/:word/echo", (req, res) => {
     res.json({ echo: req.params.word});
 });
+
+
+//get input from client: query parameters
+app.get("/name",(req, res) => {
+    res.json({ name: req.query.first + " " + req.query.last});
+    
+});
+
+
+
+
 
 
 
